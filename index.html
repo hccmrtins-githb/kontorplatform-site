@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontor — Sovereign intelligence platform</title>
+<meta name="description" content="Kontor is a sovereign intelligence platform for financial-crime compliance. Self-hosted, European-controlled.">
+<link rel="canonical" href="https://kontorplatform.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kontor">
+<meta property="og:url" content="https://kontorplatform.com/">
+<meta property="og:title" content="Kontor — Sovereign intelligence platform">
+<meta property="og:description" content="Financial-crime compliance that runs entirely on your own servers. Your data stays, your keys stay, your decisions stay.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kontor — Sovereign intelligence platform">
+<meta name="twitter:description" content="Financial-crime compliance that runs entirely on your own servers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext x='3' y='31' font-family='Georgia,serif' font-size='31' font-weight='700' fill='%2315171B'%3EK%3C/text%3E%3Ccircle cx='31' cy='29' r='4.2' fill='%232F5BD0'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#F4F2EC; --paper-2:#EBE8DF; --ink:#15171B; --ink-2:#4A4E57; --ink-3:#8A8D93;
+    --line:#D7D3C8; --ion:#2F5BD0; --sanc:#C0392B; --rule:#15171B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:16px;line-height:1.6;letter-spacing:-.005em}
+  .serif{font-family:Georgia,"Times New Roman",serif}
+  .mono{font-family:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,monospace}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 36px}
+  a{color:inherit}
+  nav{border-bottom:2px solid var(--rule);background:var(--paper)}
+  nav .wrap{display:flex;align-items:center;height:70px;gap:16px}
+  nav .brand{display:flex;align-items:center;text-decoration:none;color:var(--ink)}
+  nav .brand .wordmark{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:24px;letter-spacing:.015em}
+  nav .brand .dot{color:var(--ion)}
+  nav .meta{margin-left:auto;font-size:11px;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase}
+  .hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+  .docline{display:flex;gap:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:34px}
+  .docline .ion{color:var(--ion)}
+  .hero h1{font-size:clamp(38px,6.5vw,72px);font-weight:400;line-height:1.02;letter-spacing:-.02em;max-width:16ch}
+  .hero .sub{margin-top:28px;font-size:clamp(17px,2vw,20px);color:var(--ink-2);max-width:60ch;line-height:1.6}
+  .hero .sub b{color:var(--ink);font-weight:600}
+  section{padding:58px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:baseline}
+  @media (max-width:720px){.sec-head{grid-template-columns:1fr;gap:10px}}
+  .sec-no{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ion);padding-top:8px}
+  h2{font-size:clamp(24px,3.4vw,36px);font-weight:400;letter-spacing:-.02em;margin-bottom:16px}
+  p.lead{font-size:17.5px;color:var(--ink-2);max-width:62ch}
+  .parts{margin-top:34px;border-top:1px solid var(--line)}
+  .part{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line)}
+  @media (max-width:720px){.part{grid-template-columns:1fr;gap:4px}}
+  .part .pn{font-weight:700;font-size:16px}
+  .part .pn span{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ion);font-weight:600;margin-top:3px}
+  .part p{font-size:15px;color:var(--ink-2)}
+  .built{margin-top:30px;columns:2;column-gap:44px}
+  @media (max-width:720px){.built{columns:1}}
+  .built div{padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink-2);break-inside:avoid}
+  .built div b{color:var(--ink);font-weight:600}
+  .princ{margin-top:20px}
+  .princ .r{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:150px 1fr;gap:30px}
+  @media (max-width:720px){.princ .r{grid-template-columns:1fr;gap:8px}}
+  .princ .r:first-child{border-top:0}
+  .princ h3{font-size:22px;font-weight:600;letter-spacing:-.01em;margin-bottom:8px}
+  .princ p{font-size:15.5px;color:var(--ink-2);max-width:58ch}
+  .pull{font-size:clamp(22px,3vw,30px);font-weight:400;line-height:1.3;letter-spacing:-.01em;max-width:24ch}
+  .pull .ion{color:var(--ion)}
+  .founder{display:grid;grid-template-columns:150px 1fr;gap:30px}
+  @media (max-width:720px){.founder{grid-template-columns:1fr}}
+  .founder p{font-size:16px;color:var(--ink-2);margin-bottom:14px;max-width:60ch}
+  .founder b{color:var(--ink)}
+  .cta{padding:72px 0;text-align:left}
+  .btn{display:inline-block;background:var(--ink);color:var(--paper);border-radius:4px;padding:15px 28px;font-size:15px;font-weight:600;text-decoration:none}
+  .btn:hover{background:var(--ion)}
+  footer{background:var(--paper-2);padding:44px 0;font-size:13px;color:var(--ink-3)}
+  footer b{color:var(--ink-2);font-weight:600;display:block;margin-bottom:7px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  footer a{color:var(--ink-2);text-decoration:none}
+  footer a:hover{color:var(--ion)}
+  footer .legal{margin-top:24px;line-height:1.75;max-width:80ch}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#" aria-label="Kontor — home">
+    <span class="wordmark">KONTOR<span class="dot">.</span></span>
+  </a>
+  <div class="meta">Sovereign intelligence platform</div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="docline mono"><span class="ion">Financial-crime compliance</span><span>Self-hosted</span><span>European-controlled</span></div>
+  <h1 class="serif">Intelligence that never leaves your building.</h1>
+  <p class="sub">Kontor is a <b>sovereign intelligence platform</b> for financial-crime work. Your team screens names against sanctions and PEP data on software that runs entirely on your own servers — nothing leaves your environment, and every decision stays with your people.</p>
+</div></header>
+
+<section><div class="wrap"><div class="sec-head">
+  <div class="sec-no mono">§ 01 — Purpose</div>
+  <div>
+    <h2 class="serif">For firms that cannot send client data away.</h2>
+    <p class="lead">Smaller regulated institutions carry the same AML obligations as the large banks, without the same resources — and without the option of shipping sensitive data to an outside platform. Kontor runs where your data already lives, and is delivered as four parts on one engine.</p>
+    <div class="parts">
+      <div class="part"><div class="pn">Fondaco<span>Data engine</span></div><p>Resolves people and companies into a single, source-stamped record. Every fact traces to where it came from.</p></div>
+      <div class="part"><div class="pn">Faktor<span>AI layer</span></div><p>Explains matches and connections in plain language. You bring your own AI model; it stays inside your walls.</p></div>
+      <div class="part"><div class="pn">Kammer<span>Investigation screens</span></div><p>Where your team reviews, confirms or clears alerts and records the decision — with a four-eyes control and an audit log.</p></div>
+      <div class="part"><div class="pn">Konvoi<span>Self-hosted delivery</span></div><p>A sealed package that installs on your own servers, offline if required. Nothing external is needed to keep it running.</p></div>
+    </div>
+  </div>
+</div></div></section>
+
+<section><div class="wrap"><div class="sec-head">
+  <div class="sec-no mono">§ 02 — Capability</div>
+  <div>
+    <h2 class="serif">What it does today.</h2>
+    <p class="lead">Built and working now — described plainly, with nothing promised that isn't there.</p>
+    <div class="built">
+      <div><b>Sanctions &amp; PEP screening</b> across EU, US OFAC, UK OFSI, UN and Swiss SECO lists</div>
+      <div><b>Entity resolution</b> — one card per real person or company</div>
+      <div><b>Four-eyes confirmation</b> on every match, with a permanent audit log</div>
+      <div><b>Spreadsheet screening</b> — screen a whole client list at once</div>
+      <div><b>Cross-script matching</b> across transliterations and alphabets</div>
+      <div><b>Reports</b> — risk dashboard and clean PDF / CSV output</div>
+      <div><b>Access control</b> — user roles and permissions</div>
+      <div><b>Decision memory</b> — kept only while the underlying listing is unchanged</div>
+    </div>
+  </div>
+</div></div></section>
+
+<section><div class="wrap"><div class="sec-head">
+  <div class="sec-no mono">§ 03 — Principles</div>
+  <div>
+    <div class="pull serif">Sovereignty is an <span class="ion">architecture</span>, not a clause in a contract.</div>
+    <div class="princ">
+      <div class="r"><div><h3 class="serif">Sovereign by design</h3></div><div><p>Data and encryption keys stay under European control, on your own servers. It is built that way, not merely promised.</p></div></div>
+      <div class="r"><div><h3 class="serif">It outlives the founder</h3></div><div><p>Kontor is self-hosted and yours. If the founder disappeared tomorrow, it would keep running on your infrastructure. Source-code escrow is available on request.</p></div></div>
+      <div class="r"><div><h3 class="serif">The decision stays yours</h3></div><div><p>Kontor is software, not a service. It surfaces and records; your compliance team judges. Statedge never runs screening on a client's behalf.</p></div></div>
+    </div>
+  </div>
+</div></div></section>
+
+<section><div class="wrap"><div class="founder">
+  <div class="sec-no mono">§ 04 — Who</div>
+  <div>
+    <h2 class="serif">A solo founder, direct and accountable.</h2>
+    <p>I'm <b>Hugo Martins</b>. I built Kontor myself and I'm the person you deal with — no sales layer, no call centre.</p>
+    <p>Kontor is sold through <b>Statedge Ventures Unipessoal Lda.</b>, a Portuguese company. It is early and focused, built for firms that value a straight line to the person who made the thing.</p>
+    <p>Before any firm runs Kontor on live data, it goes through an independent security review. Demonstrations run on a sandbox with synthetic data only.</p>
+  </div>
+</div></div></section>
+
+<div class="cta"><div class="wrap">
+  <h2 class="serif" style="margin-bottom:20px">Request a conversation.</h2>
+  <a class="btn" href="mailto:hugo@kontorplatform.com">hugo@kontorplatform.com</a>
+</div></div>
+
+<footer><div class="wrap">
+  <b>Contact</b><a href="mailto:hugo@kontorplatform.com">hugo@kontorplatform.com</a>
+  <div class="legal">
+    <b style="margin-top:20px">Legal notice</b>
+    Statedge Ventures Unipessoal Lda. · Rua Doutor Augusto José da Cunha, Loja 3, 1495-240 Algés, Portugal · NIPC 518 816 150.<br><br>
+    <b>Privacy</b>
+    The data controller for this site is Statedge Ventures Unipessoal Lda. This site uses no analytics or tracking, sets no cookies, and collects no personal data beyond the technical request data your browser sends to load the page. Kontor itself is self-hosted: when a firm runs it, client data stays on that firm's own servers and never reaches Statedge. For any data question, or to exercise your rights under the GDPR, write to hugo@kontorplatform.com.
+  </div>
+</div></footer>
+</body>
+</html>
